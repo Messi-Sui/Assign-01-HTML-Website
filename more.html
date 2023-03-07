@@ -7,10 +7,10 @@
     <meta name="author" content="Remy Skelton">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="./fav_more/apple-touch-icon.png">
-    <link rel="icon" type="image.png" sizes="32x32" href="./fav_more/favicon-32x32/png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./fav_more/favicon-16x16.png">
-    <link rel="manifest" href="./fav_more/site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+    <link rel="icon" type="image.png" sizes="32x32" href="./favicon/favicon-32x32/png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <link rel="manifest" href="./favicon/site.webmanifest">
     <!-- CSS -->
     <link rel="stylesheet" href="./css/style2.css">
 		<!-- Google's MDL -->
@@ -28,10 +28,16 @@
         alert("Messi has the most games and goals/assists in the world cup")
       }
     </script>
-    <!-- MDL Progress Bar with Indeterminate Progress -->
-      <div id="p2" class="mdl-progress mdl-js-progress mdl-        progress__indeterminate"></div>
+   <!-- MDL Progress Bar with Buffering -->
+<div id="p3" class="mdl-progress mdl-js-progress"></div>
+<script>
+  document.querySelector('#p3').addEventListener('mdl-componentupgraded', function() {
+    this.MaterialProgress.setProgress(33);
+    this.MaterialProgress.setBuffer(87);
+  });
+</script>
+    <!--- Title --->
     <h1>Lionel Messi</h1>
-		<p>Messi holds may records at club and international levels. But, the biggest achement in my opinion is the seven ballon d'ors he has resived and these ballon d'ors he has resived have come in three seperate decades.</p>
 		<!-- Colored raised button -->
 		<button onclick="btnClickMe()" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
 		  Click Me!
@@ -41,14 +47,36 @@
   <i class="material-icons">add</i>
 </button>
     <p>Where does Ronaldo rank in your all time greatest players to play soccer/football</p>
-    <!-- Textfield with Floating Label -->
-
-<form action="#">
-  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-    <input class="mdl-textfield__input" type="text" id="sample3">
-    <label class="mdl-textfield__label" for="sample3">Text...</label>
-  </div>
-</form>
+   <!-- Simple list -->
+<style>
+.demo-list-item {
+  width: 300px;
+}
+</style>
+ <h4>Here is a list of where Messi has got His trophies from</h4>
+<ul class="demo-list-item mdl-list">
+  <li class="mdl-list__item">
+    <span class="mdl-list__item-primary-content">
+      <p><b>53 induvidual trophies</b></p>
+    </span>
+  </li>
+  <li class="mdl-list__item">
+    <span class="mdl-list__item-primary-content">
+      <p><b>4 international trophies</b></p>
+    </span>
+  </li>
+  <li class="mdl-list__item">
+    <span class="mdl-list__item-primary-content">
+      <p><b>35 club Trophies</b></p>
+    </span>
+  </li>
+</ul>
+  <h4>Do you belive Messi has the most trophies of all time</h4>
+  <!--- Check Box --->
+  <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-2">
+  <input type="checkbox" id="checkbox-2" class="mdl-checkbox__input">
+  <span class="mdl-checkbox__label">yes</span>
+</label>
     <h2>
       <img src="./images/Messi.jpg" alt="Lionel Messi" width="600">
       </h2>
