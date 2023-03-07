@@ -1,0 +1,23 @@
+/* Created by: Remy Skelton
+* Created on: Feb 2023
+* This CSS file defines the syle for index.html
+* ICS2O-Unit1-04-HTML-CSS
+*/
+
+body {
+  Background: #086a9b;
+}
+
+h1 {
+  background-color: rgb(73, 0, 122);
+  color: hsl(121, 92%, 36%);
+  padding: 40px;
+  text-align: center;
+}
+
+p {
+  Background-color: #700000;
+}
+ h2{
+  text-align: center;
+}
