@@ -1,96 +1,109 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="description" content="Major Assienment, Messi Vs Ronaldo">
-    <meta name="keywords" content="immaculata, ics2o">
-    <meta name="author" content="Remy Skelton">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
-    <link rel="icon" type="image.png" sizes="32x32" href="./favicon/favicon-32x32/png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
-    <link rel="manifest" href="./favicon/site.webmanifest">
-    <!-- CSS -->
-    <link rel="stylesheet" href="./css/style3.css">
-		<!-- Google's MDL -->
-		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-		<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.pink-light_blue.min.css" />
-    <title>Major Assienment, Messi Vs Ronaldo</title>
-  </head>
-  <body>
-		<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
-    <script>
-      function btnClickMe() {
-        alert("Ronaldo is the all time goals leader with 827 in 1152 games.")
-      }
-			function btnAssists() {
-        alert("Messi is the all time assist leader with 352 in 1013 games.")
-      }
-    </script>
-    <!-- Simple MDL Progress Bar -->
-<div id="p1" class="mdl-progress mdl-js-progress"></div>
-<script>
-  document.querySelector('#p1').addEventListener('mdl-componentupgraded', function() {
-    this.MaterialProgress.setProgress(44);
-  });
-</script>
-    <!--- Text --->
-    <h1>Messi Vs Ronaldo</h1>
-		<p>Ronaldo and Messi have been dominating the Soccer/Football stage for the last 18 years, but their domince is comming to an end. With all their achments through out the years it makes sense why we would compare these two players. Although there achments may look very similaire to one another their way of playing the game is much diffrent as Ronaldo is very good at putting the ball in the net and being over 6ft. Messi syle of play has much more ball possession and passing, also he has a much smaller stature standing only at 5ft 7in.</p>
-		<!-- Colored raised button -->
-		<button onclick="btnClickMe()" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
-		  Click Me!
-		</button> 
-		<!-- Colored FAB button with ripple -->
-<button onclick="btnAssists()" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
-  <i class="material-icons">add</i>
-</button>
-    <h4>How many Ballon d'ors in a row did Messi and Ronaldo have inbetween themselves</h4>
-    <!-- Numeric Textfield with Floating Label -->
-    <form action="#">
-      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-        <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="sample4">
-        <label class="mdl-textfield__label" for="sample4">Number of Ballon d'ors...</label>
-        <span class="mdl-textfield__error">Input is not a number!</span>
-      </div>
-    </form>
-    <H4>Who has more of these achements(leave it unclicked for Ronaldo and clicked for Messi) </H4>
-    <!--- Table --->
-    <p>
-    <table class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp">
-  <thead>
-    <tr>
-      <th class="mdl-data-table__cell--non-numeric">
-        Messi and Ronaldo
-      </th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td class="mdl-data-table__cell--non-numeric">Ballon d'or</td>
-    </tr>
-    <tr>
-      <td class="mdl-data-table__cell--non-numeric">World Cups</td>
-    </tr>
-    <tr>
-      <td class="mdl-data-table__cell--non-numeric">Goals</td>
-    </tr>
-    <tr>
-      <td class="mdl-data-table__cell--non-numeric">Goals/assists</td>
-    </tr>
-    <tr>
-      <td class="mdl-data-table__cell--non-numeric">Champions Leagues</td>
-    </tr>
-  </tbody>
-</table>
-    </p>
-    <!--- Image --->
-    <h2>
-      <img src="./images/MessiandRonaldo.jpg" alt="Lionel Messi" width="600">
-      </h2>
-    <p>
-      Here is a <a href="https://www.messivsronaldo.app/"> link to a web page which goes in depth in this comparison.</a>
-    </p>
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Major Assienment, Messi Vs Ronaldo">
+  <meta name="keywords" content="immaculata, ics2o">
+  <meta name="author" content="Remy Skelton">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+  <link rel="icon" type="image.png" sizes="32x32" href="./favicon/favicon-32x32/png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+  <link rel="manifest" href="./favicon/site.webmanifest">
+  <!-- CSS -->
+  <link rel="stylesheet" href="./css/style3.css">
+  <!-- Google's MDL -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.pink-light_blue.min.css" />
+  <title>Major Assienment, Messi Vs Ronaldo</title>
+</head>
+
+<body>
+  <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+  <script>
+    function btnClickMe() {
+      alert("Ronaldo is the all time goals leader with 827 in 1152 games.")
+    }
+    function btnAssists() {
+      alert("Messi is the all time assist leader with 352 in 1013 games.")
+    }
+  </script>
+  <!-- Simple MDL Progress Bar -->
+  <div id="p1" class="mdl-progress mdl-js-progress"></div>
+  <script>
+    document.querySelector('#p1').addEventListener('mdl-componentupgraded', function () {
+      this.MaterialProgress.setProgress(44);
+    });
+  </script>
+  <!--- Text --->
+  <h1>Messi Vs Ronaldo</h1>
+  <p>Ronaldo and Messi have been dominating the Soccer/Football stage for the last 18 years, but their domince is
+    comming to an end. With all their achments through out the years it makes sense why we would compare these two
+    players. Although there achments may look very similaire to one another their way of playing the game is much
+    diffrent as Ronaldo is very good at putting the ball in the net and being over 6ft. Messi syle of play has much more
+    ball possession and passing, also he has a much smaller stature standing only at 5ft 7in.</p>
+  <!-- Colored raised button -->
+  <button onclick="btnClickMe()" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+    Click Me!
+  </button>
+  <!-- Colored FAB button with ripple -->
+  <button onclick="btnAssists()"
+    class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
+    <i class="material-icons">add</i>
+  </button>
+  <h4>How many Ballon d'ors in a row did Messi and Ronaldo have inbetween themselves</h4>
+  <!-- Numeric Textfield with Floating Label -->
+  <form action="#">
+    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+      <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="sample4">
+      <label class="mdl-textfield__label" for="sample4">Number of Ballon d'ors...</label>
+      <span class="mdl-textfield__error">Input is not a number!</span>
+    </div>
+  </form>
+  <H4>Who has more of these achements(leave it unclicked for Ronaldo and clicked for Messi) </H4>
+  <!--- Table --->
+  <p>
+  <table class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp">
+    <thead>
+      <tr>
+        <th class="mdl-data-table__cell--non-numeric">
+          Messi and Ronaldo
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="mdl-data-table__cell--non-numeric">Ballon d'or</td>
+      </tr>
+      <tr>
+        <td class="mdl-data-table__cell--non-numeric">World Cups</td>
+      </tr>
+      <tr>
+        <td class="mdl-data-table__cell--non-numeric">Goals</td>
+      </tr>
+      <tr>
+        <td class="mdl-data-table__cell--non-numeric">Goals/assists</td>
+      </tr>
+      <tr>
+        <td class="mdl-data-table__cell--non-numeric">Champions Leagues</td>
+      </tr>
+    </tbody>
+  </table>
+  </p>
+  <!--- Gif --->
+  <img src="https://media3.giphy.com/media/dRcb3xrnZJQmPVnY2W/giphy.gif" width="200">.
+  <!--- Image --->
+  <h2>
+    <img src="./images/MessiandRonaldo.jpg" alt="Lionel Messi" width="600">
+  </h2>
+  <p>
+    Here is a <a href="https://www.messivsronaldo.app/"> link to a web page which goes in depth in this comparison.</a>
+    and a video on the two player achements.
+  </p>
+  <!--- Video --->
+  <iframe width="600" height="350" src="https://www.youtube.com/embed/K3ZVHF-FWak" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</body>
+
 </html>
